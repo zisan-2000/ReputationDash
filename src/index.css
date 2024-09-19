@@ -1,5 +1,94 @@
+/* Import FontAwesome for icons */
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+
+/* Header styles */
+.header {
+  @apply shadow;
+}
+.header-container {
+  @apply container mx-auto flex items-center justify-between py-4;
+}
+.header-title {
+  @apply text-2xl font-bold;
+}
+.header-title-black {
+  @apply text-black;
+}
+.header-title-green {
+  @apply text-green-600;
+}
+.header-nav {
+  @apply space-x-6;
+}
+
+.header-contact {
+  @apply flex items-center space-x-4;
+}
+
+.header-contact-button {
+  @apply rounded  px-4 py-2;
+}
+
+/* Hero styles */
+
+.hero-container {
+  @apply container mx-auto flex flex-col items-center py-16;
+}
+.hero-title {
+  @apply mb-4 text-4xl font-bold;
+}
+.hero-subtitle,
+.hero-question {
+  @apply mb-6 text-lg;
+}
+.hero-question {
+  @apply mb-8;
+}
+.hero-card-container {
+  @apply flex space-x-6;
+}
+.hero-card {
+  @apply flex flex-col items-center space-y-4 rounded-lg bg-white px-8 py-6 text-gray-800 shadow-lg hover:shadow-2xl;
+}
+
+.hero-card-icon {
+  @apply mb-2 text-5xl text-green-500;
+}
+.hero-card-title {
+  @apply text-2xl font-bold;
+}
+.hero-next-button {
+  @apply mt-8 rounded-lg bg-green-600 px-6 py-3 text-white;
+}
+
+/* Recognition Section Styles */
+.recognition-section {
+  @apply container mx-auto text-center; /* Background color and padding */
+}
+
+.recognition-title {
+  @apply mb-6 text-xl font-bold; /* Title styling */
+}
+
+.recognition-items {
+  @apply flex flex-wrap justify-center; /* Container for items */
+}
+
+.recognition-item {
+  @apply flex flex-col items-center space-y-2; /* Individual item styling */
+}
+
+.recognition-item-icon {
+  @apply text-5xl; /* Icon size */
+}
+
+.recognition-item-label {
+  @apply text-sm text-gray-600; /* Label styling */
+}
